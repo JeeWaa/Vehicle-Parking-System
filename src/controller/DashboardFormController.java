@@ -5,7 +5,7 @@ import com.jfoenix.controls.JFXComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 
-public class DashBoardFormController {
+public class DashboardFormController {
     public Label time;
     public Label date;
     public JFXComboBox vehicleComboBox;
