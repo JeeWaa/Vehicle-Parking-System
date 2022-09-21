@@ -1,14 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.DashBoardFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="495.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <JFXComboBox fx:id="vehicleComboBox" layoutX="23.0" layoutY="182.0" prefHeight="28.0" prefWidth="240.0" promptText="Select Vehicle">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <Label fx:id="vehicleTypeText" alignment="CENTER" layoutX="23.0" layoutY="246.0" prefHeight="45.0" prefWidth="240.0" style="-fx-background-color: #eaeaea;" text="Vehicle Type">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="driverComboBox" layoutX="23.0" layoutY="320.0" prefHeight="28.0" prefWidth="240.0" promptText="Select Driver">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <Label alignment="TOP_CENTER" layoutX="467.0" layoutY="90.0" prefHeight="106.0" prefWidth="274.0" style="-fx-background-color: #eaeaea;" text="Your Parking Slot Number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="slotNumberText" alignment="CENTER" layoutX="569.0" layoutY="124.0" prefHeight="45.0" prefWidth="71.0" text="0">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="467.0" layoutY="424.0" onMouseClicked="#managerLogin" prefHeight="32.0" prefWidth="274.0" style="-fx-background-color: #dadada;" text="Manager Login">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="onDeliveryButton" buttonType="RAISED" layoutX="467.0" layoutY="359.0" onMouseClicked="#onDeliveryShift" prefHeight="32.0" prefWidth="274.0" style="-fx-background-color: #6a00ff;" text="On Delivery Shift" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="parkVehicleButton" buttonType="RAISED" layoutX="467.0" layoutY="297.0" onMouseClicked="#parkVehicle" prefHeight="32.0" prefWidth="274.0" style="-fx-background-color: #6a00ff;" text="Park Vehicle" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="467.0" layoutY="246.0" prefHeight="13.0" prefWidth="274.0" />
+      <Label fx:id="driverText" alignment="CENTER" layoutX="23.0" layoutY="379.0" prefHeight="45.0" prefWidth="240.0" style="-fx-background-color: #eaeaea;" text="Driver">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="22.0" layoutY="14.0" prefHeight="45.0" prefWidth="719.0" style="-fx-background-color: #eaeaea;" text="Vehicle Parking">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="time" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="90.0" prefHeight="47.0" prefWidth="386.0" style="-fx-background-color: #eaeaea;" text="08 : 30 AM   ">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" alignment="CENTER" layoutX="37.0" layoutY="90.0" prefHeight="28.0" prefWidth="116.0" style="-fx-background-color: #eaeaea;" text="2022 : 09 : 20">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="436.0" layoutY="90.0" orientation="VERTICAL" prefHeight="373.0" prefWidth="6.0" />
+   </children>
 </AnchorPane>
