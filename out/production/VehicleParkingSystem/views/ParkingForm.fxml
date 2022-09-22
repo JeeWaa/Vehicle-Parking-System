@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="506.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingFormController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="184.0" prefHeight="269.0" prefWidth="733.0">
+        <columns>
+          <TableColumn fx:id="vehicleNumberColumn" prefWidth="156.0" text="Vehicle Number" />
+          <TableColumn fx:id="vehicleTypeColumn" minWidth="0.0" prefWidth="233.0" text="Vehicle Type" />
+            <TableColumn fx:id="parkingSlotColumn" minWidth="0.0" prefWidth="98.0" text="Parking Slot" />
+            <TableColumn fx:id="parkedTimeColumn" minWidth="0.0" prefWidth="245.0" text="Parked Time" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="logOutButton" buttonType="RAISED" layoutX="631.0" layoutY="462.0" onMouseClicked="#logOut" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #b1afaf;" text="Log Out" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox fx:id="parkingComboBox" layoutX="14.0" layoutY="85.0" prefHeight="30.0" prefWidth="170.0" promptText="In Parking">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton fx:id="addVehicleButton" buttonType="RAISED" layoutX="342.0" layoutY="127.0" onMouseClicked="#addVehicle" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #9b29ff;" text="Add Vehicle" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="addDriverButton" buttonType="RAISED" layoutX="560.0" layoutY="127.0" onMouseClicked="#addDriver" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #9b29ff;" text="Add Driver" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="733.0" style="-fx-background-color: #d6d6d6;" text="Parking">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
