@@ -23,14 +23,14 @@ public class VehicleFormController {
     public JFXTextField vehicleNumberText;
     public JFXTextField maximumWeightText;
     public JFXTextField passengerText;
-    public JFXButton addVehicleButton;
-
-    public static ArrayList<Vehicle> vehicles = new ArrayList<>();
     public TableView<VehicleTable> vehicleTable;
     public TableColumn typeColumn;
     public TableColumn numberColumn;
     public TableColumn weightColumn;
     public TableColumn passengerColumn;
+    public JFXButton addVehicleButton;
+
+    public static ArrayList<Vehicle> vehicles = new ArrayList<>();
 
     public void initialize() {
         vehicleComboBox.getItems().addAll("Van", "Bus", "CargoLorry");

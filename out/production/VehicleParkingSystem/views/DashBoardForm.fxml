@@ -31,7 +31,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="slotNumberText" alignment="CENTER" layoutX="569.0" layoutY="124.0" prefHeight="45.0" prefWidth="71.0" text="0">
+      <Label fx:id="slotNumberText" alignment="CENTER" layoutX="569.0" layoutY="124.0" prefHeight="45.0" prefWidth="71.0" text="1">
          <font>
             <Font size="44.0" />
          </font>

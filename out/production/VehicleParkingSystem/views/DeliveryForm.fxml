@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="506.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeliveryFormController">
    <children>
-      <TableView fx:id="tableView" layoutX="14.0" layoutY="184.0" prefHeight="269.0" prefWidth="733.0">
+      <TableView fx:id="deliveryTable" layoutX="14.0" layoutY="184.0" prefHeight="269.0" prefWidth="733.0">
         <columns>
           <TableColumn fx:id="vehicleNumberColumn" prefWidth="156.0" text="Vehicle Number" />
           <TableColumn fx:id="vehicleTypeColumn" minWidth="0.0" prefWidth="233.0" text="Vehicle Type" />
@@ -44,5 +44,10 @@
             <Font size="32.0" />
          </font>
       </Label>
+      <JFXButton fx:id="homeButton" layoutX="22.0" layoutY="24.0" onMouseClicked="#home" prefHeight="30.0" prefWidth="59.0" text="Home">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>
