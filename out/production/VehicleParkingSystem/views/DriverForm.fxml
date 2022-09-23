@@ -4,26 +4,37 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="491.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverFormController">
+<AnchorPane prefHeight="491.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverFormController">
    <children>
-      <JFXTextField fx:id="driverNameText" layoutX="35.0" layoutY="93.0" prefHeight="33.0" prefWidth="296.0" promptText="Driver Name" />
-      <JFXTextField fx:id="nicText" layoutX="35.0" layoutY="151.0" prefHeight="33.0" prefWidth="296.0" promptText="NIC" />
-      <JFXTextField fx:id="driverLicenseText" layoutX="35.0" layoutY="213.0" prefHeight="33.0" prefWidth="296.0" promptText="Driving License No" />
-      <JFXButton fx:id="addDriverButton" buttonType="RAISED" layoutX="35.0" layoutY="424.0" onMouseClicked="#addDriver" prefHeight="33.0" prefWidth="296.0" style="-fx-background-color: #7a28ff;" text="Add Driver" textFill="WHITE">
+      <JFXTextField fx:id="driverNameText" layoutX="14.0" layoutY="97.0" prefHeight="33.0" prefWidth="263.0" promptText="Driver Name" />
+      <JFXTextField fx:id="nicText" layoutX="14.0" layoutY="155.0" prefHeight="33.0" prefWidth="263.0" promptText="NIC" />
+      <JFXTextField fx:id="driverLicenseText" layoutX="14.0" layoutY="217.0" prefHeight="33.0" prefWidth="263.0" promptText="Driving License No" />
+      <JFXButton fx:id="addDriverButton" buttonType="RAISED" layoutX="14.0" layoutY="428.0" onMouseClicked="#addDriver" prefHeight="33.0" prefWidth="263.0" style="-fx-background-color: #7a28ff;" text="Add Driver" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </JFXButton>
-      <Label alignment="CENTER" layoutX="52.0" layoutY="24.0" prefHeight="42.0" prefWidth="263.0" text="Add Driver" textFill="#7a28ff">
+      <Label alignment="CENTER" layoutX="15.0" layoutY="14.0" prefHeight="42.0" prefWidth="843.0" style="-fx-background-color: #dadada;" text="Add Driver" textFill="#7a28ff">
          <font>
             <Font size="28.0" />
          </font>
       </Label>
-      <Separator layoutX="83.0" layoutY="392.0" prefWidth="200.0" />
-      <JFXTextField fx:id="addressText" layoutX="35.0" layoutY="272.0" prefHeight="33.0" prefWidth="296.0" promptText="Address" />
-      <JFXTextField fx:id="contactText" layoutX="35.0" layoutY="331.0" prefHeight="33.0" prefWidth="296.0" promptText="Contact No" />
+      <Separator layoutX="46.0" layoutY="396.0" prefWidth="200.0" />
+      <JFXTextField fx:id="addressText" layoutX="14.0" layoutY="276.0" prefHeight="33.0" prefWidth="263.0" promptText="Address" />
+      <JFXTextField fx:id="contactText" layoutX="14.0" layoutY="335.0" prefHeight="33.0" prefWidth="263.0" promptText="Contact No" />
+      <TableView fx:id="driverTable" layoutX="297.0" layoutY="77.0" prefHeight="384.0" prefWidth="562.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="128.0" text="Name" />
+          <TableColumn fx:id="nicColumn" prefWidth="90.0" text="NIC" />
+            <TableColumn fx:id="licenseColumn" prefWidth="91.0" text="License" />
+            <TableColumn fx:id="addressColumn" prefWidth="144.0" text="Address" />
+            <TableColumn fx:id="contactColumn" prefWidth="108.0" text="Contact" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
